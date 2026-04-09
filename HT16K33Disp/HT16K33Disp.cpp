@@ -57,7 +57,6 @@ void HT16K33Disp::Text(byte address, String text1)
         Wire.write(c2 & 0x00FF);
         Wire.write((c2 & 0xFF00) >> 8);
         Wire.endTransmission();
-        delay(100);
     } 
 }
 //------------------------------------------------------------
